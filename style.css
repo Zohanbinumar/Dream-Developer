@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+
+/* ################ html element styling############# */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.1em;
+    letter-spacing:3px;
+    font-weight: 500;
+}
+ 
+
+/* ######################### Utility Classess############ */
+.Container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.Container1{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.bg-dark{
+    background-color: #262626;
+}
+.Container .logo,
+.nav-item a{
+    color:white}
+.text-reed{
+    color: red;
+}
+
+
+
+
+.lg-heading{
+    font-size: 2.5rem;
+}
+.md-headings{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: white;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+    
+}
+.navbar a:hover{
+    border-bottom: 2px solid orange;
+}
+.btn{
+    display: inline-block;
+    padding: o.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn{
+    background-color: darkcyan;
+    color: wheat;
+    border-radius: 100px;
+    padding: 8px;
+}
+.btn-primary{
+    /* background-color: none; */
+    border: 1px solid red;
+    color:red;
+    /* border-style:groove; */
+    border-radius: 50px;
+    padding: 7px 10px;
+} 
+
+
+
+/* ###################### Header Styling############ */
+
+.navbar{
+padding: 0.5rem;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    position: relative;
+    height: 100vh;
+    background-image:url('../Imgs/pexels-pixabay-301792\ -\ Copy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .logo,
+.header .navbar a{
+    color:white;
+}
+ .navbar .logo{
+    float: left;
+    font-size: 3.0rem;
+    margin-top: 2rem;
+}
+.navbar .nav-item{
+    float: right;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav-items{
+    display: inline-block;
+    padding: 1rem;
+}
+.header-Content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.header-Content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-Content p{
+    text-transform: uppercase;
+}
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 10rem;
+}
+.row{
+    height: 350px;
+    box-shadow: 0px 0px 10px 0px cornflowerblue;
+    /* border: 2px solid red; */
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    /* border: 4px solid red; */
+    height: 100%;
+
+}
+.row .text-box{
+    /* border: 4px solid orange; */
+    background-color: white;
+    padding: 15px;
+    height: 100%;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    
+
+    
+}
+.row1 .img-box{
+    background-image: url(../Imgs/new6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.row2 .img-box{
+    background-image: url(../Imgs/Header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p{
+    font-size: small;
+    text-transform: lowercase;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-decoration-color: lightgray;
+}
+a:hover{
+    background-color: orangered;
+}
+
+
+/* #########################    #Section Featues ####################### */
+.features{
+    padding: 10rem 0rem;
+    background-color:whitesmoke;
+}
+.box-wrapper{
+    /* border: 2px solid darkcyan; */
+    box-shadow: 0px 0px 5px 0px cornflowerblue;
+}
+.box1{
+    background-color: #66de1538;
+}
+.box2{
+    background-color:#15bcde;
+}
+.box3{
+    background-color:#3b880738;
+}
+.box{
+    width: 33.33%;
+    float: left;
+    /* border: 2px solid red; */
+    padding: 2rem;
+    text-align: center;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer{
+    padding: 0px 0px;
+    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+    background-color: rgb(100, 169, 237);
+}
+.social .fab{
+    margin: 10px;
+    color: aliceblue;
+}
+
+
+
+/* ################# About Styling ############################# */
+
+.about{
+    padding: 5rem 0;
+}
+
+.ddr::after {
+    content: '';
+    display: block;
+    border: 2px solid #e62c33;
+    width: 100%;
+  }
+
+  /* ################# Blogger Styling ######################### */
+  .blogger{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .blogger .blog1{
+    float: left;
+    width: 50%;
+    
+  }
+  .blogger .blog2{
+    float: right;
+    width: 50%;
+
+  }
+   .blogger::after{
+    content: "";
+    display: block;
+    clear: both;
+   }
+   .blogger li::before{
+    content: '\2713';
+    color: red;
+    padding-right: 1rem;
+    font-weight: bold;
+   }
+
+   .counts .count-items{
+    float: left;
+    width: 25%;
+   }
+   .counts{
+    text-align: center;
+    margin-top: 2rem;
+   }
+   .counts .count-items p{
+    text-transform: lowercase;
+    font-size: 1.8rem;
+   }
+   .counts .count-items span{
+    font-size: large;
+    color: red;
+    font-weight: 700;
+   }
+   .banner{
+    border: 2px solid red;
+    padding: 1rem;
+    background-color:#e62c33;
+    box-shadow: 2px 2px 15px 0px cornflowerblue;
+   }
+   .btn1{
+    display: block;
+    margin-right: .5px;
+    margin-top: 1px;
+    border: 2px solid white;
+    color: white;
+    padding: 7px 45px;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 2px;
+    font-weight: bold; 
+   }
+   .banner .ban1{
+    float: left;
+
+   }
+   .banner .ban2{
+    float: right;
+   }
+   .banner::after{
+    content: '';
+    display: block;
+    clear: both;
+   }
+.banner p{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+    margin: 10px;
+}
+
+
+/* ###################### Contact Page Styling################### */
+.contact-form{
+    padding: 5rem 0;
+    background-color: white;
+}
+.form-wrapper form{
+    height: 500px;
+    background-color: whitesmoke;
+   
+    
+}
+.company{
+    /* border: 2px solid red; */
+    float: left;
+    width: 49%;
+    padding: 1rem;
+    background-color:whitesmoke;
+    height: 500px;
+}
+.img1{
+    max-width:90%;
+    min-height: 20%;
+    object-fit:cover;
+}
+
+.form{
+    float: right;
+    width: 49%;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+h1,p{
+    margin:7px;
+}
+.form-wrapper i{
+    display: inline-block;
+}
+.form-wrapper h1{
+    display: inline-block;
+}
+.form-wrapper .form h2{
+    border-bottom: 2px solid red;
+    margin-bottom: 2px;
+    
+}
+.form-wrapper label{
+    display: block;
+    margin-bottom: 3px;
+    font-size: 11px;
+    font-style: bold;
+}
+.form-wrapper input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.four-group{
+    margin-bottom: 2rem;
+}
+.form-wrapper .form label::after{
+    content: "*";
+    color: red;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 156px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    padding: 0.5em 3em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #e62c33;
+    color: white;
+    font: size 1.8rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+.form .lg-heading{
+    margin-bottom: 2px;
+}
+.capital{
+margin-left: 0;
+text-transform: uppercase;
+}
+
+/* ####################### Media Queries ######################## */
+ 
+ @media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .nav-item, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+    }
+
+    .banner .ban1,
+    .banner .ban2{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+ }
+
+ @media (min-width:501px) and (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .nav-item, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+    }
+
+    .banner .ban1,
+    .banner .ban2{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+ }
+ @media (min-width:769px) and (1200px){
+    html{
+        font-size: 56.25%;
+    }
+ }
+    
+    
+
+
+ 
+
+
+
+
+
